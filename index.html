@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Valentine?</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="card" id="card">
+    <div class="emoji" aria-hidden="true">💘</div>
+    <h1>Will you be my Valentine?</h1>
+    <p class="sub">I have a very important question…</p>
+
+    <div class="btns">
+      <button id="yesBtn" class="btn yes">Yes 💖</button>
+      <button id="noBtn" class="btn no">No 🙈</button>
+    </div>
+
+    <p class="hint" id="hint">Try clicking “No” 👀</p>
+  </main>
+
+  <div class="overlay" id="overlay" hidden>
+    <div class="modal">
+      <h2>YAYYYYY!!! 🥰</h2>
+      <p>Best decision ever. See you on our date 💐</p>
+      <button id="closeBtn" class="btn yes">Aww ok</button>
+      <canvas id="confetti"></canvas>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
