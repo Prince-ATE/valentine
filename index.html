@@ -8,14 +8,15 @@
 </head>
 
 <body>
-  <main class="card">
+  <main class="card" id="card">
     <div class="emoji" aria-hidden="true">💘</div>
-    <h1>Will you be my Valentine?</h1>
+
+    <h1 class="title">Will you be my Valentine?</h1>
     <p class="sub">I have a very important question…</p>
 
     <div class="btns" id="btns">
-      <button id="yesBtn" class="btn yes">Yes 💖</button>
-      <button id="noBtn" class="btn no">No 🙈</button>
+      <button id="yesBtn" class="btn yes" type="button">Yes 💖</button>
+      <button id="noBtn" class="btn no" type="button" aria-label="No">No 🙈</button>
     </div>
 
     <p class="hint" id="hint">Try clicking “No” 👀</p>
@@ -24,17 +25,20 @@
   <!-- Success Overlay -->
   <div class="overlay" id="overlay" hidden>
     <div class="modal">
-      <h2>YAYYYYY!!! 🥰</h2>
-      <p>Best decision ever. See you on our date 💐</p>
+      <h2 class="modalTitle">YAYYYYY!!! 🥰</h2>
+      <p class="modalSub">Best decision ever. See you on our date 💐</p>
 
-      <!-- Celebration GIF -->
-      <img
-        class="celebrate-gif"
-        src="https://media.giphy.com/media/3o6fJ1BM7R2EBRDnxK/giphy.gif"
-        alt="Celebration"
-      />
+      <!-- Playable "gif" (Giphy player) -->
+      <div class="playerWrap" aria-label="Celebration video">
+        <iframe
+          title="Celebration"
+          src="https://giphy.com/embed/3o6fJ1BM7R2EBRDnxK"
+          frameborder="0"
+          allowfullscreen
+        ></iframe>
+      </div>
 
-      <button id="closeBtn" class="btn yes">Aww ok</button>
+      <button id="closeBtn" class="btn yes bigClose" type="button">Aww ok</button>
 
       <canvas id="confetti"></canvas>
     </div>
