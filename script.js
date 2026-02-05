@@ -4,6 +4,7 @@ const hint = document.getElementById("hint");
 
 const overlay = document.getElementById("overlay");
 const closeBtn = document.getElementById("closeBtn");
+overlay.hidden = true;
 
 let noClicks = 0;
 

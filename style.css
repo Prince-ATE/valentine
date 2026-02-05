@@ -79,3 +79,6 @@ h1{ margin:10px 0 6px; font-size:32px; }
   height:100%;
   pointer-events:none;
 }
+.overlay[hidden] {
+  display: none !important;
+}
